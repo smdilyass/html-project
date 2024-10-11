@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 50vh;
+            background-image:url(./images/glitch.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero-btn {
+            padding: 10px 20px;
+            background-color: #18b735;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 40px;
+        }
+
+        /* Services Section */
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .card {
+            width: 23%;
+            background-color: #6d6969;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: auto;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #18b735;
+            margin-top: 15px;
+        }
+
+        .card p {
+            margin: 10px 0;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: #18b735;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .card button:hover {
+            background-color: #18b735;
+        }
+
+      
+        /* Footer Section */
+        footer {
+            background-color: white;
+            color: #333;
+            padding: 20px 0;
+            text-align: start;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+
+        .footer-container div {
+            width: 22%;
+            margin: 10px;
+        }
+
+        .footer-container h3 {
+            color: #18b735;
+            margin-bottom: 15px;
+        }
+
+        .footer-container a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-container a:hover {
+            color: #18b735;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <nav>
+            <ul>
+                <li><a href="hero.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contartez.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Bienvenue sur Notre Site</h1>
+            <p>Nous fournissons les meilleurs services pour vous.</p>
+            <a href="services.html" class="hero-btn">Découvrir nos services</a>
+        </div>
+    </section>
+
+    <!-- Main Section - Services -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services-container">
+            <div class="card">
+                <img src="./images/service1.jpg" alt="Service 1">
+                <h3>Service 1</h3>
+                <p>Nous offrons un service de qualité pour tous vos besoins.</p>
+                <button>En savoir plus</button>
+            </div>
+            <div class="card">
+                <img src="./images/justice-league-the-flash-running-with-streaks-of-lightening.jpg" alt="Service 2">
+                <h3>Service 2</h3>
+                <p>Un service rapide et efficace pour votre entreprise.</p>
+                <button>En savoir plus</button>
+            </div>
+            <div class="card">
+                <img src="./images/dev.jpg" alt="Service 3">
+                <h3>Service 3</h3>
+                <p>Solutions innovantes pour le développement web.</p>
+                <button>En savoir plus</button>
+            </div>
+            <div class="card">
+                <img src="./images/pic.webp" alt="Service 4">
+                <h3>Service 4</h3>
+                <p>Support technique pour tous vos projets numériques.</p>
+                <button>En savoir plus</button>
+            </div>
+        </div>
+    </section>
+     <!-- Footer Section -->
+     <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>À propos</h3>
+                <p>Nous sommes une entreprise spécialisée dans la prestation de services web innovants et de qualité.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="hero.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contartez.html">Contactez-nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: info@entreprise.com</p>
+                <p>Téléphone: +212 123 456 789</p>
+                <p>Adresse: 123, Rue Exemple, Casablanca, Maroc</p>
+            </div>
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Youcode. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
